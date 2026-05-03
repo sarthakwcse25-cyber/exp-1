@@ -1,127 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>La Pasta Bella</title>
-    <link rel="stylesheet" href="file.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Pasta Bella</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="file.css">
 </head>
-
-<body bgcolor="lavender">
-<header style="text-align:center">
-    <h1>La Pasta Bella</h1>
-    <p>Authentic Italian Experience</p>
-</header>
-
-
-<nav style="text-align:center;">
-    <a href="#gallery">Gallery</a>
-    <a href="#menu">Menu</a>
-    <a href="#reservation">Reservation</a>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="#">🍝 La Pasta Bella</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+<li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="#reservation">Reservation</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
 </nav>
-
-<section id="gallery">
-    <h2>Our Ambiance</h2>
-    <img src="https://cdn.pixabay.com/video/2024/02/25/201947-916877801_tiny.jpg" width="30%">
-    <img src="https://i.ytimg.com/vi/aFSHKkDogh0/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGHIgTCg_MA8=&rs=AOn4CLDyX_ID9ZXWMn1czIlnzwcDEfABiQ" width="30%">
-    <img src="https://choosemarshall.com/imager/cmsimages/partners/1112953/Pasta-Bella_91852798b59be8b28fc00edfe4aec23a.jpg" width="30%">
+<section id="home" class="hero">
+<div>
+<h1>La Pasta Bella</h1>
+<p>Authentic Italian Experience</p>
+<a href="#menu" class="btn btn-custom btn-lg mt-3">Explore Menu</a>
+</div>
 </section>
-
-
-<section id="menu">
-    <h2>Our Menu</h2>
-
-
-    <h3>Veg Items</h3>
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>Dish</th>
-            <th>Type</th>
-        </tr>
-        <tr>
-            <td>Margherita Pizza</td>
-            <td>Veg</td>
-        </tr>
-        <tr>
-            <td>Veg Alfredo Pasta</td>
-            <td>Veg</td>
-        </tr>
-        <tr>
-            <td>Panner Pesto Pasta</td>
-            <td>Veg</td>
-        </tr>
-        <tr>
-            <td>Cheesy Fries</td>
-            <td>Veg</td>
-        </tr>
-        <tr>
-            <td>Cheese Garlic Bread</td>
-            <td>Veg</td>
-        </tr>
-
-
-    </table>
-
-    <br>
-
-       <h3>Non-Veg Items</h3>
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>Dish</th>
-            <th>Type/th>
-        </tr>
-        <tr>
-            <td>Chicken Pasta</td>
-            <td>Non-Veg</td>
-        </tr>
-        <tr>
-            <td>Pepperoni Pizza</td>
-            <td>Non-Veg</td>
-        </tr>
-        <tr>
-            <td>Chicken Mac And Cheese</td>
-            <td>Non-Veg</td>
-        </tr>
-        <tr>
-            <td>Chicken Nuggets</td>
-            <td>Non-Veg</td>
-        </tr>
-
-
-    </table>
+<section id="hours" class="section text-center">
+<div class="container">
+<h2 class="mb-5">Opening Hours</h2>
+<div class="row justify-content-center">
+<div class="col-md-6">
+<div class="card p-4 shadow">
+<h5>We are open every day</h5>
+<p>Monday - Friday: 10:00 AM - 10:00 PM</p>
+<p>Saturday: 11:00 AM - 11:30 PM</p>
+<p>Sunday: 11:00 AM - 11:00 PM</p>
+<p class="mt-3 text-success">✔ Open Now</p>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-<!-- Reservation Section -->
-<section id="reservation">
-    <h2>Reserve a Table</h2>
-
-    <form>
-        <label>Name:</label><br>
-        <input type="text" required><br><br>
-
-        <label>Mobile Number:</label><br>
-        <input type="text" required><br><br>
-
-        <label>Date:</label><br>
-        <input type="date" required><br><br>
-
-        <label>Time:</label><br>
-        <input type="time" required><br><br>
-
-        <label>Guests:</label><br>
-        <select>
-            <option>1-2</option>
-            <option>2-4</option>
-            <option>4-6</option>
-            <option>6-8</option>
-        </select><br><br>
-
-        <input type="submit" value="Book Now">
-    </form>
+<section id="menu" class="section container">
+<h2 class="text-center mb-5">Our Menu</h2>
+<div class="row g-4">
+<div class="col-md-4 d-flex">
+<div class="card shadow w-100">
+<img src="https://au.ooni.com/cdn/shop/articles/20220211142645-margherita-9920.jpg?v=1737368217&width=1080" class="gallery-img">
+<div class="card-body text-center">
+<h5>Margherita Pizza</h5>
+<p class="text-muted">Veg</p>
+</div>
+</div>
+</div>
+<div class="col-md-4 d-flex">
+<div class="card shadow w-100">
+<img src="https://www.sharmispassions.com/wp-content/uploads/2015/12/alfredopasta5-500x500.jpg" class="gallery-img">
+<div class="card-body text-center">
+<h5>Veg Alfredo Pasta</h5>
+<p class="text-muted">Veg</p>
+</div>
+</div>
+</div>
+<div class="col-md-4 d-flex">
+<div class="card shadow w-100">
+<img src="https://www.acouplecooks.com/wp-content/uploads/2022/06/Cheese-Fries-005.jpg" class="gallery-img">
+<div class="card-body text-center">
+<h5>Cheesy Fries</h5>
+<p class="text-muted">Veg</p>
+</div>
+</div>
+</div>
+<div class="col-md-4 d-flex">
+<div class="card shadow w-100">
+<img src="https://www.hunts.com/sites/g/files/qyyrlu211/files/uploadedImages/img_6934_48664.jpg" class="gallery-img">
+<div class="card-body text-center">
+<h5>Pepperoni Pizza</h5>
+<p class="text-muted">Non-Veg</p>
+</div>
+</div>
+</div>
+<div class="col-md-4 d-flex">
+<div class="card shadow w-100">
+<img src="https://www.allrecipes.com/thmb/Dw_WFOvCds43ksPxkrE60qxcwSk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-8849-HomemadeChickenNuggets-beauty-4x3-ca915ee936054272af1b506181923c7f.jpg" class="gallery-img">
+<div class="card-body text-center">
+<h5>Chicken Nuggets</h5>
+<p class="text-muted">Non-Veg</p>
+</div>
+</div>
+</div>
+<div class="col-md-4 d-flex">
+<div class="card shadow w-100">
+<img src="https://easyweeknightrecipes.com/wp-content/uploads/2024/05/chicken-mac-and-cheese-1.jpg" class="gallery-img">
+<div class="card-body text-center">
+<h5>Chicken Mac and Cheese</h5>
+<p class="text-muted">Non-Veg</p>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-
-<footer style="background:#333; color:white; text-align:center">
-    © 2026 La Pasta Bella
+<section id="gallery" class="section container">
+<h2 class="text-center mb-5">Our Ambiance</h2>
+<div class="row g-4">
+<div class="col-md-4">
+<img src="https://cdn.pixabay.com/video/2024/02/25/201947-916877801_tiny.jpg" class="gallery-img">
+</div>
+<div class="col-md-4">
+<img src="https://i.ytimg.com/vi/aFSHKkDogh0/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGHIgTCg_MA8=&rs=AOn4CLDyX_ID9ZXWMn1czIlnzwcDEfABiQ" class="gallery-img">
+</div>
+<div class="col-md-4">
+<img src="https://choosemarshall.com/imager/cmsimages/partners/1112953/Pasta-Bella_91852798b59be8b28fc00edfe4aec23a.jpg" class="gallery-img">
+</div>
+<div class="col-md-4">
+<img src="https://i.ytimg.com/vi/1AF8EDtMx_Y/maxresdefault.jpg" class="gallery-img">
+</div>
+<div class="col-md-4">
+<img src="https://www.espresso-services.com/hubfs/Coffee%20Shop%20Furniture.png" class="gallery-img">
+</div>
+<div class="col-md-4">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMAkciQCPkh0apuV5wPPlfaNIkxdntHanpRQ&s" class="gallery-img">
+</div>
+</div>
+</section>
+<section id="reservation" class="section">
+<div class="container">
+<h2 class="text-center mb-5">Book a Table</h2>
+<div class="row justify-content-center">
+<div class="col-md-6">
+<div class="card shadow p-4">
+<form id="reservation-form">
+<div class="mb-3">
+<label class="form-label">Full Name</label>
+<input type="text" class="form-control" placeholder="Enter your name" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="email" class="form-control" placeholder="Enter your email" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Phone Number</label>
+<input type="tel" class="form-control" placeholder="Enter phone number" required>
+</div>
+<div class="row">
+<div class="col-md-6 mb-3">
+<label class="form-label">Date</label>
+<input type="date" class="form-control" required>
+</div>
+<div class="col-md-6 mb-3">
+<label class="form-label">Time</label>
+<input type="time" class="form-control" required>
+</div>
+</div>
+<div class="mb-3">
+<label class="form-label">Guests</label>
+<select class="form-select">
+<option>Select Guests</option>
+<option>1 Person</option>
+<option>2 People</option>
+<option>3 People</option>
+<option>4+ People</option>
+</select>
+</div>
+<div class="mb-3">
+<label class="form-label">Special Request</label>
+<textarea class="form-control" rows="3" placeholder="Any special request..."></textarea>
+</div>
+<button type="submit" class="btn btn-custom w-100">Book Now</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="section">
+<div class="container">
+<h2 class="text-center mb-5">Contact Us</h2>
+<div class="row justify-content-center">
+<div class="col-md-6">
+<div class="card shadow p-4">
+<form id="contact-form">
+<div class="mb-3">
+<label class="form-label">Full Name</label>
+<input type="text" name="user_name" class="form-control" placeholder="Enter your name" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="email" name="user_email" class="form-control" placeholder="Enter your email" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Message</label>
+<textarea name="message" class="form-control" rows="4" placeholder="Write your message..." required></textarea>
+</div>
+<button type="submit" class="btn btn-custom w-100">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<p>📍 Nagpur | 📞 9876543210</p>
 </footer>
+<div class="modal fade" id="successModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
 
+      <h4 class="mb-3">🎉 Booking Confirmed!</h4>
+      <p>Your table has been reserved successfully.</p>
+
+      <button type="button" class="btn btn-custom mt-3" data-bs-dismiss="modal">
+        OK
+      </button>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
